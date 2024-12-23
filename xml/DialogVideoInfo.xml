@@ -360,7 +360,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font12</font>
-								<textcolor>grey</textcolor>
+								<textcolor>text_highlight</textcolor>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</control>
@@ -413,7 +413,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font12</font>
-								<textcolor>grey</textcolor>
+								<textcolor>text_highlight</textcolor>
 								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
