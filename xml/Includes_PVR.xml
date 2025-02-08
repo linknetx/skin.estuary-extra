@@ -468,29 +468,45 @@
 				<visible>!ListItem.IsParentFolder</visible>
 				<control type="panel" id="5000">
 					<top>20</top>
-					<width>830</width>
+					<width>840</width>
 					<bottom>100</bottom>
 					<orientation>vertical</orientation>
-					<focusedlayout height="100" width="780">
+					<focusedlayout height="100" width="840">
 						<control type="label">
 							<left>10</left>
 							<height>90</height>
-							<width>830</width>
+							<width>740</width>
 							<aligny>center</aligny>
 							<font>font14</font>
 							<label>$VAR[RecordingDateSizeLabel]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
+						<control type="image">
+							<right>0</right>
+							<top>0</top>
+							<width>80</width>
+							<aligny>center</aligny>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$INFO[ListItem.ActualIcon]</texture>
+						</control>
 					</focusedlayout>
-					<itemlayout height="100" width="780">
+					<itemlayout height="100" width="840">
 						<control type="label">
 							<left>10</left>
 							<height>90</height>
-							<width>830</width>
+							<width>740</width>
 							<aligny>center</aligny>
 							<font>font14</font>
 							<label>$VAR[RecordingDateSizeLabel]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
 							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+						<control type="image">
+							<right>0</right>
+							<top>0</top>
+							<width>80</width>
+							<aligny>center</aligny>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$INFO[ListItem.ActualIcon]</texture>
 						</control>
 					</itemlayout>
 					<content sortby="date" sortorder="$PARAM[folder_sortorder]">$INFO[ListItem.FilenameAndPath]</content>
