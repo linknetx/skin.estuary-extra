@@ -471,42 +471,80 @@
 					<width>840</width>
 					<bottom>100</bottom>
 					<orientation>vertical</orientation>
-					<focusedlayout height="100" width="840">
+					<focusedlayout height="130" width="840">
 						<control type="label">
 							<left>10</left>
 							<height>90</height>
-							<width>740</width>
+							<width>690</width>
 							<aligny>center</aligny>
 							<font>font14</font>
-							<label>$VAR[RecordingDateSizeLabel]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							<label>$VAR[RecordingDateSizeLabel]$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+						<control type="image">
+							<right>100</right>
+							<top>29</top>
+							<width>32</width>
+							<height>32</height>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$VAR[ListPVRInfoIconVar]</texture>
 						</control>
 						<control type="image">
 							<right>0</right>
 							<top>0</top>
 							<width>80</width>
-							<aligny>center</aligny>
+							<height>90</height>
+							<aligny>top</aligny>
 							<aspectratio align="center">keep</aspectratio>
 							<texture>$INFO[ListItem.ActualIcon]</texture>
+						</control>
+						<control type="label">
+							<left>10</left>
+							<top>90</top>
+							<height>35</height>
+							<width>840</width>
+							<aligny>center</aligny>
+							<font>font13</font>
+							<label>[I][COLOR text_highlight]$VAR[ListPVRInfoPlotVar][/COLOR][/I]</label>
+							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
-					<itemlayout height="100" width="840">
+					<itemlayout height="130" width="840">
 						<control type="label">
 							<left>10</left>
 							<height>90</height>
-							<width>740</width>
+							<width>690</width>
 							<aligny>center</aligny>
 							<font>font14</font>
-							<label>$VAR[RecordingDateSizeLabel]$INFO[ListItem.Label]$INFO[ListItem.EpisodeName, (,)]</label>
+							<label>$VAR[RecordingDateSizeLabel]$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+						<control type="image">
+							<right>100</right>
+							<top>29</top>
+							<width>32</width>
+							<height>32</height>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$VAR[ListPVRInfoIconVar]</texture>
 						</control>
 						<control type="image">
 							<right>0</right>
 							<top>0</top>
+							<height>90</height>
 							<width>80</width>
-							<aligny>center</aligny>
+							<aligny>top</aligny>
 							<aspectratio align="center">keep</aspectratio>
 							<texture>$INFO[ListItem.ActualIcon]</texture>
+						</control>
+						<control type="label">
+							<left>10</left>
+							<top>90</top>
+							<height>35</height>
+							<width>840</width>
+							<aligny>center</aligny>
+							<font>font13</font>
+							<label>[I][COLOR text_highlight]$VAR[ListPVRInfoPlotVar][/COLOR][/I]</label>
+							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</itemlayout>
 					<content sortby="date" sortorder="$PARAM[folder_sortorder]">$INFO[ListItem.FilenameAndPath]</content>

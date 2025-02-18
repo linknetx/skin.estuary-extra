@@ -500,7 +500,15 @@
 		<value condition="ListItem.IsRecording">windows/pvr/record.png</value>
 		<value condition="ListItem.HasReminder">icons/pvr/timers/bell.png</value>
 		<value>icons/pvr/timers/recording.png</value>
-  </variable>
+	</variable>
+	<variable name="ListPVRInfoIconVar">
+		<value condition="Window.IsActive(MyPVRRecordings.xml)">$VAR[ListPVRRecordingsIconVar]</value>
+		<value condition="Window.IsActive(MyPVRTimers.xml)">$VAR[ListPVRTimersIconVar]</value>
+	</variable>
+	<variable name="ListPVRInfoPlotVar">
+		<value condition="!String.StartsWith(ListItem.Plot,...)">...$INFO[ListItem.Plot]</value>
+		<value>$INFO[ListItem.Plot]</value>
+	</variable>
 	<!-- Breadcrumbs -->
 	<variable name="BreadcrumbsVideoVar">
 		<value condition="Container.Content(movies) | String.StartsWith(container.folderpath,library://video/movies/) | String.StartsWith(container.folderpath,videodb://movies)">$LOCALIZE[20342]</value>
